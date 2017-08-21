@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Grey"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSujet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_top_notification"
+            android:padding="1dp"
+            android:text="Sujet du message"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/BlueIve"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@color/caldroid_white"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/caldroid_white"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"></View>
+
+            <ImageView
+                android:id="@+id/ivNotification"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"></View>
+
+                <TextView
+                    android:id="@+id/tvTexte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Text du message reçue"
+                    android:textColor="@color/BlueTexti"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@color/caldroid_white"></View>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/BlueIve"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"></View>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom_notification"
+            android:padding="1dp"
+            android:text="Date du message"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"></View>
+    </LinearLayout>
+</FrameLayout>

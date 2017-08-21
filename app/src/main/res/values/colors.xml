@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0d122c</color>
+    <color name="colorPrimaryDark">#080c22</color>
+    <color name="colorAccent">#cf4c00</color>
+    <color name="BlueIve">#cf4c00</color>
+    <color name="BlueTexti">#101032</color>
+    <color name="Biege">#c8c8c8</color>
+    <color name="Login">#161a31</color>
+    <color name="login">#6f7fa6</color>
+    <color name="logintextview">#ffffff</color>
+    <color name="saumon">#ffccbc</color>
+    <color name="BlueCiel">#90a4ae</color>
+    <color name="Grey">#dcdcdc</color>
+    <color name="LightGrey">#f2f2f2</color>
+    <color name="GreyD">#c8c8c8</color>
+</resources>

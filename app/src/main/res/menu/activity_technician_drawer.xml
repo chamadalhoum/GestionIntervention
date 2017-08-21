@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_principale_t"
+            android:icon="@drawable/princicon"
+            android:title="Principale" />
+        <item
+            android:id="@+id/nav_calendrier_t"
+            android:icon="@drawable/calendar"
+            android:title="Calendrier" />
+    </group>
+
+    <item android:title="Compte">
+        <menu>
+            <item
+                android:id="@+id/nav_parameteres_t"
+                android:icon="@drawable/parametres"
+                android:title="Paramètre du compte" />
+            <item
+                android:id="@+id/nav_deconnexion_t"
+                android:icon="@drawable/deconicon"
+                android:title="Deconnexion" />
+        </menu>
+
+    </item>
+
+</menu>

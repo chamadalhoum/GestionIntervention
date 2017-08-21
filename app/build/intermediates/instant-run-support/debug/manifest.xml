@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.GestionIntervention"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.0" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/workers"
+        android:label="GestionIntervention"
+        android:roundIcon="@drawable/workers"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.dell.GestionIntervention.LoginActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.dell.GestionIntervention.TechnicianActivity"
+            android:label="GestionIntervention Technicien"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.dell.GestionIntervention.PartnerActivity"
+            android:label="GestionIntervention Partenaire"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.dell.GestionIntervention.PendingInterventionActivity"
+            android:label="Intervention en attente"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity
+            android:name="com.example.dell.GestionIntervention.PendingStockActivity"
+            android:label="Stock en attente"
+            android:noHistory="true" />
+        <activity
+            android:name="com.example.dell.GestionIntervention.RecievedStockActivity"
+            android:label="Stock reçu" />
+        <activity
+            android:name="com.example.dell.GestionIntervention.ValidationActivity"
+            android:label="Validation d&apos;intervention"
+            android:noHistory="true" />
+        <activity
+            android:name="com.example.dell.GestionIntervention.RecievedInterventionActivity"
+            android:label="Intervention reçu" />
+        <activity
+            android:name="com.example.dell.GestionIntervention.ProfilActivity"
+            android:label="Profil" />
+		/>
+        <activity
+            android:name="com.example.dell.GestionIntervention.FactureActivity"
+            android:label="Facturation"
+            android:noHistory="true" />
+
+        <provider
+            android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:authorities="com.example.dell.GestionIntervention.com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_principale_P"
+            android:icon="@drawable/princicon"
+            android:title="Principale" />
+        <item
+            android:id="@+id/nav_calendrier_P"
+            android:icon="@drawable/calendar"
+            android:title="Calendrier" />
+        <item
+            android:id="@+id/nav_monStock_P"
+            android:icon="@drawable/modemicon"
+            android:title="Stock reçu" />
+        <item
+            android:id="@+id/nav_stockEntrant_P"
+            android:icon="@drawable/stockicon"
+            android:title="Stock en attente" />
+        <item
+            android:id="@+id/nav_facture_P"
+            android:icon="@drawable/facture"
+            android:title="Factures" />
+        <item
+            android:id="@+id/nav_messagerie_P"
+            android:icon="@drawable/message"
+            android:title="Messagerie" />
+    </group>
+    <item android:title="Compte">
+        <menu>
+            <item
+                android:id="@+id/nav_parameteres_P"
+                android:icon="@drawable/parametres"
+                android:title="Paramètres du compte" />
+            <item
+                android:id="@+id/nav_deconnexion_P"
+                android:icon="@drawable/deconicon"
+                android:title="Deconnexion" />
+        </menu>
+
+    </item>
+</menu>

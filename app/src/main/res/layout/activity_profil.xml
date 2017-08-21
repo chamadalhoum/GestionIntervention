@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.GestionIntervention.ProfilActivity">
+
+	<ScrollView
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginBottom="8dp"
+		android:layout_marginEnd="0dp"
+		android:layout_marginStart="0dp"
+		android:layout_marginTop="0dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="1.0"
+		tools:layout_constraintBottom_creator="1"
+		tools:layout_constraintLeft_creator="1"
+		tools:layout_constraintRight_creator="1"
+		tools:layout_constraintTop_creator="1">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/LightGrey"
+				android:orientation="vertical"
+				android:padding="8dp">
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<View
+							android:layout_width="match_parent"
+							android:layout_height="10dp"></View>
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+
+                            android:padding="1dp"
+                            android:text="Paramètres généraux du compte"
+                            android:textAlignment="center"
+                            android:textColor="@color/caldroid_black"
+                            android:textSize="30dp" />
+
+                        <View
+							android:layout_width="match_parent"
+							android:layout_height="4dp"></View>
+
+						<View
+							android:layout_width="match_parent"
+							android:layout_height="2dp"
+							android:background="@color/caldroid_black"></View>
+
+						<View
+							android:layout_width="match_parent"
+							android:layout_height="10dp"></View>
+
+
+					</LinearLayout>
+
+				</FrameLayout>
+
+				<TextView
+					android:layout_width="73dp"
+					android:layout_height="wrap_content"
+					android:text="Nom"
+					android:textColor="@color/caldroid_black"
+					android:textSize="17dp" />
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/profil_text_shape"
+						android:orientation="vertical"
+						android:padding="5dp">
+
+
+						<EditText
+							android:id="@+id/etNom"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:clickable="false"
+							android:cursorVisible="false"
+							android:ems="10"
+							android:focusable="false"
+							android:focusableInTouchMode="false"
+							android:inputType="textPersonName" />
+					</LinearLayout>
+
+				</FrameLayout>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Prenom"
+					android:textColor="@color/caldroid_black"
+					android:textSize="17dp" />
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/profil_text_shape"
+						android:orientation="vertical"
+						android:padding="5dp">
+
+
+						<EditText
+							android:id="@+id/etPrenom"
+							android:layout_width="330dp"
+							android:layout_height="wrap_content"
+							android:clickable="false"
+							android:cursorVisible="false"
+							android:ems="10"
+							android:focusable="false"
+							android:focusableInTouchMode="false"
+							android:inputType="textPersonName" />
+					</LinearLayout>
+				</FrameLayout>
+
+				<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adresse"
+                    android:textColor="@color/caldroid_black"
+                    android:textSize="17dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/profil_text_shape"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <EditText
+                            android:id="@+id/etAdresse"
+                            android:layout_width="330dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+                </FrameLayout>
+
+				<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Statut"
+                    android:textColor="@color/caldroid_black"
+                    android:textSize="17dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/profil_text_shape"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <EditText
+                            android:id="@+id/etStatutfamilial"
+                            android:layout_width="330dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+                </FrameLayout>
+
+				<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cin"
+                    android:textColor="@color/caldroid_black"
+                    android:textSize="17dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/profil_text_shape"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <EditText
+                            android:id="@+id/etCin"
+                            android:layout_width="330dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+                </FrameLayout>
+
+				<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gouvernorat"
+                    android:textColor="@color/caldroid_black"
+                    android:textSize="17dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/profil_text_shape"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <EditText
+                            android:id="@+id/etGouvernorat"
+                            android:layout_width="330dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+                </FrameLayout>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Delegation"
+					android:textColor="@color/caldroid_black"
+					android:textSize="17dp" />
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/profil_text_shape"
+						android:orientation="vertical"
+						android:padding="5dp">
+
+
+						<EditText
+							android:id="@+id/etDelegation"
+							android:layout_width="330dp"
+							android:layout_height="wrap_content"
+							android:clickable="false"
+							android:cursorVisible="false"
+							android:ems="10"
+							android:focusable="false"
+							android:focusableInTouchMode="false"
+							android:inputType="textPersonName" />
+					</LinearLayout>
+				</FrameLayout>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Localite"
+					android:textColor="@color/caldroid_black"
+					android:textSize="17dp" />
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/profil_text_shape"
+						android:orientation="vertical"
+						android:padding="5dp">
+
+
+						<EditText
+							android:id="@+id/etLocalite"
+							android:layout_width="330dp"
+							android:layout_height="wrap_content"
+							android:clickable="false"
+							android:cursorVisible="false"
+							android:ems="10"
+							android:focusable="false"
+							android:focusableInTouchMode="false"
+							android:inputType="textPersonName" />
+					</LinearLayout>
+				</FrameLayout>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Code Postal"
+					android:textColor="@color/caldroid_black"
+					android:textSize="17dp" />
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/profil_text_shape"
+						android:orientation="vertical"
+						android:padding="5dp">
+
+
+						<EditText
+							android:id="@+id/etCodePostal"
+							android:layout_width="330dp"
+							android:layout_height="wrap_content"
+							android:clickable="false"
+							android:cursorVisible="false"
+							android:ems="10"
+							android:focusable="false"
+							android:focusableInTouchMode="false"
+							android:inputType="textPersonName" />
+					</LinearLayout>
+				</FrameLayout>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Login"
+					android:textColor="@color/caldroid_black"
+					android:textSize="17dp" />
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/profil_text_shape"
+						android:orientation="vertical"
+						android:padding="5dp">
+
+
+						<EditText
+							android:id="@+id/etLogin"
+							android:layout_width="330dp"
+							android:layout_height="wrap_content"
+							android:clickable="false"
+							android:cursorVisible="false"
+							android:ems="10"
+							android:focusable="false"
+							android:focusableInTouchMode="false"
+							android:inputType="textPersonName" />
+					</LinearLayout>
+				</FrameLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Numéro de téléphone"
+						android:textColor="@color/caldroid_black"
+						android:textSize="17dp" />
+
+					<TextView
+						android:id="@+id/modifierTel"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Modifier"
+						android:textAlignment="textEnd"
+						android:textColor="@color/BlueTexti" />
+				</LinearLayout>
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+
+
+					<LinearLayout
+						android:id="@+id/lyModifTel"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:background="@drawable/profil_text_shape"
+							android:orientation="vertical"
+							android:padding="5dp">
+
+							<EditText
+								android:id="@+id/etTel"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:clickable="false"
+								android:cursorVisible="false"
+								android:ems="10"
+								android:focusable="false"
+								android:focusableInTouchMode="false"
+								android:inputType="number" />
+						</LinearLayout>
+					</LinearLayout>
+				</FrameLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Numéro portable"
+						android:textColor="@color/caldroid_black"
+						android:textSize="17dp" />
+
+					<TextView
+						android:id="@+id/modifiernumportable"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Modifier"
+						android:textAlignment="textEnd"
+						android:textColor="@color/BlueTexti" />
+				</LinearLayout>
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+
+
+					<LinearLayout
+						android:id="@+id/lyModifTel"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:background="@drawable/profil_text_shape"
+							android:orientation="vertical"
+							android:padding="5dp">
+
+							<EditText
+								android:id="@+id/etMonTel"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:clickable="false"
+								android:cursorVisible="false"
+								android:ems="10"
+								android:focusable="false"
+								android:focusableInTouchMode="false"
+								android:inputType="number" />
+						</LinearLayout>
+					</LinearLayout>
+				</FrameLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="E-mail"
+						android:textColor="@color/caldroid_black"
+						android:textSize="17dp" />
+
+					<TextView
+						android:id="@+id/modifierEmail"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Modifier"
+						android:textAlignment="textEnd"
+						android:textColor="@color/BlueTexti" />
+				</LinearLayout>
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+
+					<LinearLayout
+						android:id="@+id/lyModifEmail"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:background="@drawable/profil_text_shape"
+							android:orientation="vertical"
+							android:padding="5dp">
+
+
+							<EditText
+								android:id="@+id/etEmail"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:clickable="false"
+								android:cursorVisible="false"
+								android:ems="10"
+								android:focusable="false"
+								android:focusableInTouchMode="false"
+								android:inputType="textEmailAddress" />
+						</LinearLayout>
+					</LinearLayout>
+				</FrameLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Mot de passe"
+						android:textColor="@color/caldroid_black"
+						android:textSize="17dp" />
+
+					<TextView
+						android:id="@+id/modifierMotDePasse"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Modifier"
+						android:textAlignment="textEnd"
+						android:textColor="@color/BlueTexti" />
+				</LinearLayout>
+
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+
+					<LinearLayout
+						android:id="@+id/lyModifMotDePasse"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:background="@drawable/profil_text_shape"
+							android:orientation="vertical"
+							android:padding="5dp">
+
+
+							<EditText
+								android:id="@+id/etMotDePasse"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:clickable="false"
+								android:cursorVisible="false"
+								android:ems="10"
+								android:focusable="false"
+								android:focusableInTouchMode="false"
+								android:inputType="textPassword" />
+						</LinearLayout>
+					</LinearLayout>
+				</FrameLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="10dp"></View>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.GestionIntervention.ValidationActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"></View>
+
+                    <TextView
+                        android:id="@+id/tvPlanficiation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shape_top_notification"
+                        android:text="Validation d'intervention"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp"
+                        android:padding="1dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/BlueIve"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"></View>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/BlueCiel"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:id="@+id/frameRemove">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date d'intervention: "
+                        android:textSize="15dp"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <EditText
+                        android:id="@+id/etDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="date"
+                        android:focusable="false"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Heure début d'intervention: "
+                        android:textSize="15dp"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <EditText
+                        android:id="@+id/etTimeStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="time"
+                        android:focusable="false"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Heure fin d'intervention: "
+                        android:textSize="15dp"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <EditText
+                        android:id="@+id/etTimeEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="time"
+                        android:focusable="false"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <CheckBox
+                        android:id="@+id/cbProblemResolu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Problème résolu"
+                        android:textColor="@color/caldroid_white"
+                        android:checked="true"/>
+
+                    <CheckBox
+                        android:id="@+id/cbProblemeNonResolu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Problème non résolu"
+                        android:textColor="@color/caldroid_white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kilométrage: "
+                        android:textSize="15dp"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/etKilometreage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/caldroid_white"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Commentaire: "
+                        android:textSize="15dp"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <MultiAutoCompleteTextView
+                        android:id="@+id/etDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/caldroid_white" />
+
+                    <Switch
+                        android:id="@+id/sEchangeModem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Echnage du modem"
+                        android:textColor="@color/caldroid_white"
+                        android:textSize="17dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/switchRemove">
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Num de série du modem sortant: "
+                        android:textSize="15dp"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <Spinner
+                        android:id="@+id/spModemSortant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Num de série du retour: "
+                        android:textSize="15dp"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/etModemRentrant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:text=""
+                        android:textColor="@color/caldroid_white" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Marque: "
+                        android:textSize="15dp"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <Spinner
+                        android:id="@+id/spMarque"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Modèle: "
+                        android:textSize="15dp"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <Spinner
+                        android:id="@+id/spModele"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type: "
+                        android:textSize="15dp"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <Spinner
+                        android:id="@+id/spType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Couleur: "
+                        android:textSize="15dp"
+                        android:textColor="@color/caldroid_white"/>
+
+                    <Spinner
+                        android:id="@+id/spCouleur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/bValid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:onClick="onClickValider"
+                android:text="Valider" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/BlueIve"></View>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"></View>
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shape_bottom_notification"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp"
+                        android:padding="1dp"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"></View>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
